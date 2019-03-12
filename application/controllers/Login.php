@@ -7,7 +7,8 @@ class Login extends CI_Controller {
 	{
 		$data[ 'title' ] = 'login';
 
-		$this->load->view('layouts/header',$data);
+		$this->load->view('inc/navbar');
+		$this->load->view('layouts/header',$data);		
 		$this->load->view('login');
 		$this->load->view('layouts/footer');
 	}
