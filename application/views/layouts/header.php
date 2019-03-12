@@ -11,6 +11,9 @@
   <!-- jQuery 3 -->
   <script src="<?php echo base_url();?>vendor/almasaeed2010/adminlte/bower_components/jquery/dist/jquery.min.js"></script>
 
+  <!-- angular js -->
+   <script src="<?php echo base_url();?>vendor/components/angular.js/angular.min.js"></script>
+
 
 
 <!--   <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/morris.js/0.5.1/morris.css">  
@@ -162,7 +165,7 @@
 </head>
 
 
-<body class="hold-transition skin-blue sidebar-mini">
+<body class="hold-transition skin-blue sidebar-mini" ng-app="Jdc">
   <div class="wrapper">
 
 
