@@ -1,6 +1,6 @@
 
 <!-- Main content -->
-<section class="content">
+<section class="content" ng-controller="users">
 
 
 	<div class="row ">
@@ -52,13 +52,8 @@
 
 	<br>
 
-	<div id="table">
-		
-	</div>
 
-
-
-	<!-- <table id="tableUsers"class="table table-responsive table-hover table-striped" >    
+	<table id="tableUsers"class="table table-responsive table-hover table-striped" >    
 		
 		<thead>
 			<tr>
@@ -74,19 +69,32 @@
 			</tr>
 		</thead>
 
-		<tbody id="table">
-			
-		</tbody>
+		<tbody>
+			<tr ng-repeat="x in users">
+				<td>{{ x.id_user }}</td>
+				<td>{{ x.img }}</td>
+				<td>{{ x.first_name }}</td>
+				<td>{{ x.last_name }}</td>
+				<td>{{ x.country }}</td>
+				<td>{{ x.state }}</td>
+				<td>{{ x.role }}</td>
+				<td>{{ x.created_date }}</td>
+				<td><a class="approved"  ><span class="btn-success btn-xs glyphicon glyphicon-pencil" data-toggle="Edit" title="Edit" ng-click="edit()"></span></a>
+					<a id="delete"   ><span class="btn-danger btn-xs glyphicon glyphicon-trash" data-toggle="Delete" title="Delete" ng-click="delete()"></span></a></td>
+				</tr>			
+			</tbody>
 
-	</table> -->
-
-	<br>
-	<br>
-	<br>
-</div>
+		</table>
 
 
-<!-- end content -->
+
+		<br>
+		<br>
+		<br>
+	</div>
+
+
+	<!-- end content -->
 </section>
 
 

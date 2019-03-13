@@ -7,16 +7,14 @@ class Users_Model extends CI_Model {
 	public function getUsers()
 	{
 		$this->db->select( 'A.id_user,A.img,A.first_name,A.last_name,C.country,D.state,B.role,A.created_date' );
-		$this->db->from( 'dev.users AS A' );
-		$this->db->join( 'dev.roles AS B', 'A.id_role = B.id_role', 'inner' );
-		$this->db->join( 'dev.countrys AS C', 'A.id_country = C.id_country', 'inner' );
-		$this->db->join( 'dev.states AS D', 'A.id_state = D.id_state', 'inner' );
+		$this->db->from( 'users AS A' );
+		$this->db->join( 'roles AS B', 'A.id_role = B.id_role', 'inner' );
+		$this->db->join( 'countrys AS C', 'A.id_country = C.id_country', 'inner' );
+		$this->db->join( 'states AS D', 'A.id_state = D.id_state', 'inner' );
 		
 		$query = $this->db->get()->result();
-
-		// return $query;
-		// probando retornar como json
-		return  json_encode($query);	
+		
+		return $query;	
 	}
 
 

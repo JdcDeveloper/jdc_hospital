@@ -48,6 +48,16 @@ class Api extends JDC_Controller {
 
 	}
 
+
+	public function getUsers()
+	{
+
+		$data = $this->Users_Model->getUsers();
+
+		echo json_encode($data);
+
+	}
+
 	public function countUsers()
 	{
 
@@ -67,16 +77,7 @@ class Api extends JDC_Controller {
 		echo json_encode($data);
 
 	}
-
-	public function getUsers(){
-
-		$data = $this->Users_Model->getUsers();
-
-		echo $data;
-
-		// echo gettype($data);
-
-	}
+	
 
 	public function getCombo()
 	{
