@@ -4,24 +4,21 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 class Api_Model extends CI_Model {
 	
 	public function getCountrys()
-	{
-		// una forma de usar distict
-		$this->db->distinct();
+	{		
 		$this->db->select("id_country,country");
-		$this->db->from("dev.countrys");
+		$this->db->from("countrys");
 		$this->db->order_by("country", "asc");
 		$query = $this->db->get();	
 
-		return $query->result();
+		return $query->result();	
 		
 	}
 
 	public function getStates()
-	{
+	{		
 		
-		$this->db->distinct();
 		$this->db->select("id_state,state");
-		$this->db->from("dev.states");
+		$this->db->from("states");
 		$this->db->order_by("state", "asc");
 		$query = $this->db->get();		
 
@@ -31,10 +28,9 @@ class Api_Model extends CI_Model {
 
 	public function getRoles()
 	{
-		// $query = $this->db->get('dev.roles');
-		$this->db->distinct();
+		
 		$this->db->select("id_role,role");
-		$this->db->from("dev.roles");
+		$this->db->from("roles");
 		$this->db->order_by("role", "asc");
 		$query = $this->db->get();
 

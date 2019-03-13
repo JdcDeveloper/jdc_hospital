@@ -1,6 +1,6 @@
 
 <!-- Main content -->
-<section class="content">
+<section class="content" ng-controller="api">
 
 
 	<div class="row page-header">	
@@ -83,7 +83,8 @@
 				</div>
 
 				<select class="form-control" name="country" id="country">
-					<option id="option" value="0">Select Country</option>				
+					<option id="option" value="0">Select Country</option>
+					<option ng-repeat="x in countrys" value="{{x.id_country}}">{{x.country}}</option>	
 				</select>
 
 
@@ -100,7 +101,8 @@
 				</div>
 
 				<select class="form-control" name="state" id="state">
-					<option value="0">Select State</option>				
+					<option value="0">Select State</option>
+					<option ng-repeat="x in states" value="{{x.id_state}}">{{x.state}}</option>	
 				</select>
 
 
@@ -118,7 +120,8 @@
 				</div>
 
 				<select class="form-control" name="role" id="role">
-					<option value="0">Select Role</option>				
+					<option value="0">Select Role</option>
+					<option ng-repeat="x in roles" value="{{x.id_role}}">{{x.role}}</option>			
 				</select>
 
 
@@ -144,5 +147,5 @@
 	</div>
 
 
-<!-- Main content -->
+	<!-- Main content -->
 </section>

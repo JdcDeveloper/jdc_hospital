@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html>
+<html ng-app="Jdc">
 <head>
   <meta charset="utf-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -118,47 +118,7 @@
 
   var BASE_URL = "<?php echo base_url(); ?>";
 
-  var first_name = "<?php echo $first_name; ?>";
 
-  var created_date = "<?php echo $created_date; ?>";
-
-  var member_since = "<?php echo lang('member_since'); ?>";
-
-
-
-  var users = "<?php echo lang('users'); ?>";
-
-  var admins = "<?php echo lang('admins'); ?>";
-
-  var teachers = "<?php echo lang('teachers'); ?>";
-
-  var students = "<?php echo lang('students'); ?>";
-
-  var projects = "<?php echo lang('projects'); ?>";
-
-  var statistics = "<?php echo lang('statistics'); ?>";
-
-  var reports = "<?php echo lang('reports'); ?>";
-
-  var maps = "<?php echo lang('maps'); ?>";
-
-  var comments = "<?php echo lang('comments'); ?>";
-
-
-
-  var are_you_sure = "<?php echo lang('are you sure?'); ?>";
-  var record_deleted = "<?php echo lang('the record will be deleted!'); ?>";
-  var accept = "<?php echo lang('accept'); ?>";
-  var cancel = "<?php echo lang('cancel'); ?>";
-
-
-  //sidebar students
-  var schedules = "<?php echo lang('schedules'); ?>";
-  var subjects = "<?php echo lang('subjects'); ?>";
-  var notes = "<?php echo lang('notes'); ?>";
-
-
-  var register = "<?php echo lang('register'); ?>";
 
 
 </script>
@@ -168,7 +128,7 @@
 </head>
 
 
-<body class="hold-transition skin-blue sidebar-mini" ng-app="Jdc">
+<body class="hold-transition skin-blue sidebar-mini" >
   <div class="wrapper">
 
 
