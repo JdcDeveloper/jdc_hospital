@@ -116,13 +116,54 @@
 <!--  variables para poder usarlas en los js -->
 <script type="text/javascript">
 
-  var BASE_URL = "<?php echo base_url(); ?>";
+ var BASE_URL = "<?php echo base_url(); ?>";
+
+ var first_name = "<?php echo $first_name; ?>";
+
+ var created_date = "<?php echo $created_date; ?>";
+
+ var member_since = "<?php echo lang('member_since'); ?>";
+
+
+
+ var users = "<?php echo lang('users'); ?>";
+
+ var admins = "<?php echo lang('admins'); ?>";
+
+ var teachers = "<?php echo lang('teachers'); ?>";
+
+ var students = "<?php echo lang('students'); ?>";
+
+ var projects = "<?php echo lang('projects'); ?>";
+
+ var statistics = "<?php echo lang('statistics'); ?>";
+
+ var reports = "<?php echo lang('reports'); ?>";
+
+ var maps = "<?php echo lang('maps'); ?>";
+
+ var comments = "<?php echo lang('comments'); ?>";
+
+
+
+ var are_you_sure = "<?php echo lang('are you sure?'); ?>";
+ var record_deleted = "<?php echo lang('the record will be deleted!'); ?>";
+ var accept = "<?php echo lang('accept'); ?>";
+ var cancel = "<?php echo lang('cancel'); ?>";
+
+
+  //sidebar students
+  var schedules = "<?php echo lang('schedules'); ?>";
+  var subjects = "<?php echo lang('subjects'); ?>";
+  var notes = "<?php echo lang('notes'); ?>";
+
+
+  var register = "<?php echo lang('register'); ?>";
 
 
 
 
 </script>
-
 
 
 </head>

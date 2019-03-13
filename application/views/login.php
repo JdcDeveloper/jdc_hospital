@@ -1,22 +1,22 @@
-<!-- <p class="bg-danger" id="">
+<p class="bg-danger" id="">
 
-  <?php //if($this->session->flashdata('passwordCheck')): ?>
+  <?php if($this->session->flashdata('passwordCheck')): ?>
 
-    <?php //echo $this->session->flashdata('passwordCheck'); ?>
+    <?php echo $this->session->flashdata('passwordCheck'); ?>
 
-  <?php //endif; ?>
+  <?php endif; ?>
 
 </p>
 
 <p class="bg-danger" id="msgCloseSess">
 
-  <?php //if($this->session->flashdata('closeSession')): ?>
+  <?php if($this->session->flashdata('closeSession')): ?>
 
-    <?php //echo $this->session->flashdata('closeSession'); ?>
+    <?php echo $this->session->flashdata('closeSession'); ?>
 
-  <?php //endif; ?>
+  <?php endif; ?>
 
-</p> -->
+</p>
 
 
 
@@ -27,9 +27,7 @@
   </div>
   <!-- /.login-logo -->
   <div class="login-box-body">
-    <p class="login-box-msg">Sign in to start your session</p>
-
-    <!-- <form action="../../index2.html" method="post"> -->
+    <p class="login-box-msg">Sign in to start your session</p> 
 
       <?php echo form_open('login/signin') ?>
 
@@ -59,9 +57,7 @@
         <!-- /.col -->
       </div>
 
-      <?php echo form_close()  ?>
-
-      <!--  </form> -->
+      <?php echo form_close()  ?>  
 
       <div class="social-auth-links text-center">
         <p>- OR -</p>
