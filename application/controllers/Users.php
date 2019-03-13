@@ -50,7 +50,7 @@ class Users extends JDC_Controller {
 
 
 		
-		$tUsers=array(			
+		$users=array(			
 			'img' => 'user.png',
 			'first_name' => $this->input->post('first_name'),
 			'last_name' => $this->input->post('last_name'),			
@@ -65,7 +65,7 @@ class Users extends JDC_Controller {
 		);
 
 
-		$this->db->insert('dev.users', $tUsers);
+		$this->db->insert('users', $users);
 
 		redirect(base_url("users"));
 

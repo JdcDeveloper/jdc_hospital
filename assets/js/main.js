@@ -32,7 +32,7 @@ app.controller('api', function($scope, $http) {
 	});
 
 
-})
+});
 
 
 
