@@ -23,16 +23,16 @@ class JDC_Controller extends CI_Controller {
 
         // guardo la informacion del usuario en la propieda userInfo
         // y la utlizo en las clases que heredan de esta clase
-        $this->userInfo = $this->getSession();
+        // $this->userInfo = $this->getSession();
 
         // $this->getLang = $this->getSessionLanguage();
-        $this->ci =& get_instance();
+        // $this->ci =& get_instance();
 
         // $this->ci->load->helper('url');
 
         // $this->ci->load->library('session');
 
-        $this->auth();
+        // $this->auth();
 
 
 
@@ -42,29 +42,29 @@ class JDC_Controller extends CI_Controller {
    
 
     // metodo que devolvera la info del usuario
-    public function getSession()
-    {
-        return $this->session->userdata('user');
-    }
+    // public function getSession()
+    // {
+    //     return $this->session->userdata('user');
+    // }
 
     
 
 
     // pequeño midleware para no entrar por url,
     // sin estar logeado como un usuario
-    public function auth()
-    {
+    // public function auth()
+    // {
 
-        if ($this->ci->session->userdata('user') === false) {
+    //     if ($this->ci->session->userdata('user') === false) {
 
-            redirect(base_url());
-
-
-        }
+    //         redirect(base_url());
 
 
+    //     }
 
-    }
+
+
+    // }
 
 
 

@@ -17,7 +17,8 @@
 
       <ul class="nav navbar-nav">
         <li><a href="<?php echo base_url();?>home"><span class="glyphicon glyphicon-home"></span> Home</a></li>       
-        <li><a href="<?php echo base_url();?>login"><span class="glyphicon glyphicon-log-in"></span> Login</a></li> 
+        <li><a href="<?php echo base_url();?>login"><span class="glyphicon glyphicon-log-in"></span> Login</a></li>
+        <li><a href="<?php echo base_url();?>register"><span class="glyphicon glyphicon-user"></span> Register</a></li>  
         <li><a href="<?php echo base_url();?>contact"><span class="glyphicon glyphicon-earphone"></span> Contact</a></li>         
       </ul>
 
