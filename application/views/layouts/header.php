@@ -12,7 +12,10 @@
   <script src="<?php echo base_url();?>vendor/almasaeed2010/adminlte/bower_components/jquery/dist/jquery.min.js"></script>
 
   <!-- angular js -->
-   <script src="<?php echo base_url();?>vendor/components/angular.js/angular.min.js"></script>
+  <!-- <script src="<?php //echo base_url();?>vendor/components/angular.js/angular.min.js"></script> -->
+
+  <!-- angular js -->
+  <script src="<?php echo base_url();?>assets/lib/js/angular.min.js"></script>
 
 
 
