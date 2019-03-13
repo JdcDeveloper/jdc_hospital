@@ -3,17 +3,12 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 
 
 class JDC_Controller extends CI_Controller {
-    // propieda que guarda el super objeto de codeigniter
-    protected $ci;
+  
     // propiedad que guarda la informacion del usuario
-    protected $userInfo;
-
-    // protected $getLang;
+    protected $userInfo; 
     
     // propiedad para el titulo de las paginas
-    protected $title;
-
-    protected $at;  
+    protected $title;   
 
 
 
@@ -23,12 +18,7 @@ class JDC_Controller extends CI_Controller {
 
         // guardo la informacion del usuario en la propieda userInfo
         // y la utlizo en las clases que heredan de esta clase
-        $this->userInfo = $this->getSession();
-
-       
-        $this->ci =& get_instance();
-
-        // $this->auth();
+        $this->userInfo = $this->getSession();         
 
     }
 
@@ -49,7 +39,7 @@ class JDC_Controller extends CI_Controller {
     public function auth()
     {
 
-        if ($this->ci->session->userdata('user') === null) {
+        if ($this->session->userdata('user') === null) {
 
             redirect(base_url());
 
@@ -59,9 +49,6 @@ class JDC_Controller extends CI_Controller {
 
 
     }
-
-
-
 
 
 

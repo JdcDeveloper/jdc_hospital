@@ -8,7 +8,9 @@ class Users extends JDC_Controller {
 
 	public function __construct()
 	{		
-		parent::__construct();		
+		parent::__construct();
+
+		$this->auth();		
 		
 	}
 

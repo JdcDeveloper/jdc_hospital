@@ -19,7 +19,7 @@ class Dashboard extends JDC_Controller {
 		
 
 		// pequeño midleware para rutas
-		// $this->auth();
+		$this->auth();
 		
 	}
 
