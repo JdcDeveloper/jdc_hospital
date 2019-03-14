@@ -53,10 +53,10 @@ class Dashboard extends JDC_Controller {
 
 		// $data = $this->Users_Model->getUsers();
 
-		$this->load->view('admin/inc/navbar');
-		$this->load->view('admin/inc/sidebar');
+		$this->load->view('admin/inc/navbar',$this->userInfo);
+		$this->load->view('admin/inc/sidebar',$this->userInfo);
 		$this->load->view('layouts/header',$data);	
-		$this->load->view('admin/dashboard');
+		$this->load->view('admin/dashboard',$this->userInfo);
 		$this->load->view('layouts/footer');
 
 
@@ -72,10 +72,10 @@ class Dashboard extends JDC_Controller {
 
 		// $data = $this->Users_Model->getUsers();
 
-		$this->load->view('users/inc/navbar');
-		$this->load->view('users/inc/sidebar');
+		$this->load->view('users/inc/navbar',$this->userInfo);
+		$this->load->view('users/inc/sidebar',$this->userInfo);
 		$this->load->view('layouts/header',$data);	
-		$this->load->view('users/users/users');
+		$this->load->view('users/users/users',$this->userInfo);
 		$this->load->view('layouts/footer');
 
 

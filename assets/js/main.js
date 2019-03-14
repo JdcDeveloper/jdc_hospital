@@ -67,6 +67,16 @@ app.controller('users', function($scope, $http) {
 
 
 
+document.getElementById("test").innerHTML="<p>algo mas</p>"
+
+
+
+
+
+
+
+
+
 
 
 

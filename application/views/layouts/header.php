@@ -28,8 +28,8 @@
 
 
   <!-- Datatable js -->
-  <script src="<?php echo base_url();?>vendor/almasaeed2010/adminlte/lib/js/jquery.dataTables.min.js"></script>
-
+   <script src="<?php echo base_url();?>assets/lib/js/jquery.dataTables.min.js"></script>
+ 
   
   <!-- sweet alert2 -->
   <!--  <script src="<?php //echo base_url();?>vendor/almasaeed2010/adminlte/lib/js/sweetalert2.min.js"></script>  -->
@@ -95,7 +95,7 @@
 
    <!-- Table styles -->
 
-   <link rel="stylesheet" type="text/css" href="<?php echo base_url();?>vendor/almasaeed2010/adminlte/lib/css/jquery.dataTables.min.css"> 
+   <link rel="stylesheet" type="text/css" href="<?php echo base_url();?>assets/lib/css/jquery.dataTables.min.css"> 
 
 
 
@@ -118,52 +118,21 @@
 
  var BASE_URL = "<?php echo base_url(); ?>";
 
- var first_name = "<?php echo $first_name; ?>";
 
- var created_date = "<?php echo $created_date; ?>";
-
- var member_since = "<?php echo lang('member_since'); ?>";
+</script>
 
 
-
- var users = "<?php echo lang('users'); ?>";
-
- var admins = "<?php echo lang('admins'); ?>";
-
- var teachers = "<?php echo lang('teachers'); ?>";
-
- var students = "<?php echo lang('students'); ?>";
-
- var projects = "<?php echo lang('projects'); ?>";
-
- var statistics = "<?php echo lang('statistics'); ?>";
-
- var reports = "<?php echo lang('reports'); ?>";
-
- var maps = "<?php echo lang('maps'); ?>";
-
- var comments = "<?php echo lang('comments'); ?>";
+<script type="text/javascript">
 
 
-
- var are_you_sure = "<?php echo lang('are you sure?'); ?>";
- var record_deleted = "<?php echo lang('the record will be deleted!'); ?>";
- var accept = "<?php echo lang('accept'); ?>";
- var cancel = "<?php echo lang('cancel'); ?>";
-
-
-  //sidebar students
-  var schedules = "<?php echo lang('schedules'); ?>";
-  var subjects = "<?php echo lang('subjects'); ?>";
-  var notes = "<?php echo lang('notes'); ?>";
-
-
-  var register = "<?php echo lang('register'); ?>";
-
+ var created_date = "<?php echo $created_date ?>";
 
 
 
 </script>
+
+
+
 
 
 </head>

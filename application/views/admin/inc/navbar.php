@@ -146,8 +146,8 @@
           <li>
             <!-- inner menu: contains the actual data -->
 
-              <li><a href="<?php echo base_url("LanguageSwitcher/switchLang/english") ?>"><?php echo lang('english'); ?></a></li> 
-             <li><a id="spanish" href="<?php echo base_url("LanguageSwitcher/switchLang/spanish") ?>"><?php echo lang('spanish'); ?></a></li> 
+            <li><a href="<?php echo base_url("LanguageSwitcher/switchLang/english") ?>"><?php echo lang('english'); ?></a></li> 
+            <li><a id="spanish" href="<?php echo base_url("LanguageSwitcher/switchLang/spanish") ?>"><?php echo lang('spanish'); ?></a></li> 
            <!--   <li><?php //echo anchor('dashboard/index/english', 'English')?> </li>
             <li><?php //echo anchor('dashboard/index/spanish', 'Spanish')?> </li>  --> 
 
@@ -168,15 +168,15 @@
         <ul class="dropdown-menu">
           <!-- User image -->
           <li class="user-header" id="imgMenuTwo">
-            <!-- <img src="<?php //echo base_url();?>assets/dist/img/user2-160x160.jpg" class="img-circle" alt="User Image"> -->
+             <!-- <img src="<?php //echo base_url()?>subidas/miniaturas/<?php //echo $datos->ruta;?>" class="img-circle" alt="User Image">  -->
 
-            <!-- <p>
-               <?php //echo $first_name; ?>   
-              <small><?php //echo lang('member_since'); ?> <?php //echo $created_date; ?></small> 
-            </p> -->
-          </li>
+            <p>
+             <?php echo $first_name; ?>   
+             <small><?php echo lang('member_since'); ?> <?php echo $created_date; ?></small> 
+           </p> 
+         </li>
 
-          <!-- Menu Body -->
+         <!-- Menu Body -->
               <!-- <li class="user-body">
                 <div class="row">
                   <div class="col-xs-4 text-center">

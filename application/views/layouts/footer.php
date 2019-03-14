@@ -291,7 +291,7 @@
 <script src="<?php echo base_url();?>vendor/almasaeed2010/adminlte/plugins/iCheck/icheck.min.js"></script>
 
 
-<script src="<?php echo base_url();?>vendor/almasaeed2010/adminlte/js/table.js"></script>
+<script src="<?php echo base_url();?>assets/js/table.js"></script>
 
 <!-- <script src="<?php //echo base_url();?>vendor/almasaeed2010/adminlte/js/datepicker.js"></script>  -->
 
@@ -299,7 +299,7 @@
 <script src="<?php echo base_url();?>assets/js/main.js"></script>
 
 
-<script src="<?php echo base_url();?>vendor/almasaeed2010/adminlte/js/language.js"></script>
+<!-- <script src="<?php //echo base_url();?>vendor/almasaeed2010/adminlte/js/language.js"></script> -->
 
 
 

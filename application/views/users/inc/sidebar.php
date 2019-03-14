@@ -1,5 +1,5 @@
 <!-- Left side column. contains the logo and sidebar -->
-<aside class="main-sidebar">
+<aside class="main-sidebar" >
   <!-- sidebar: style can be found in sidebar.less -->
   <section class="sidebar">
     <!-- Sidebar user panel -->
@@ -43,7 +43,7 @@
           <li class="treeview">
             <a href="#">
               <i class="fa fa-users"></i>
-              <span id="users"><!-- <?php //echo lang('users'); ?> --></span>
+              <span id="users"><?php echo lang('users'); ?></span>
               <span class="pull-right-container">
                 <i class="fa fa-angle-left pull-right"></i>             
               </span>
@@ -53,51 +53,12 @@
               <li> <a href="<?php echo base_url();?>users/add"><i class="fa fa-circle-o"></i> <?php echo lang('add'); ?></a></li>
 
             </ul>
-          </li>
-          <li class="treeview">
-            <a href="#">
-              <i class="fa fa-calculator"></i>            
-              <span id="teachers"><!-- <?php //echo lang('users'); ?> --></span>
-              <span class="pull-right-container">
-                <i class="fa fa-angle-left pull-right"></i>             
-              </span>
-            </a>
-            <ul class="treeview-menu">
-              <li> <a href="<?php echo base_url();?>teachers"><i class="fa fa-circle-o"></i> <?php echo lang('view'); ?></a></li>
-              <li> <a href="<?php echo base_url();?>teachers/add"><i class="fa fa-circle-o"></i> <?php echo lang('add'); ?></a></li>
-
-            </ul>
-          </li>
-          <li class="treeview">
-            <a href="#">
-             <i class="fa fa-graduation-cap"></i>
-             <span id="students"><!-- <?php //echo lang('users'); ?> --></span>
-             <span class="pull-right-container">
-              <i class="fa fa-angle-left pull-right"></i>             
-            </span>
-          </a>
-          <ul class="treeview-menu">
-            <li> <a href="<?php echo base_url();?>students"><i class="fa fa-circle-o"></i> <?php echo lang('view'); ?></a></li>
-            <li> <a href="<?php echo base_url();?>students/add"><i class="fa fa-circle-o"></i> <?php echo lang('add'); ?></a></li>
-
-          </ul>
-        </li>
-        <li class="treeview">
-          <a href="#">
-            <i class="fa fa-archive"></i>
-            <span id="projects"><!-- <?php //echo lang('projects'); ?> --></span>
-            <span class="pull-right-container">
-              <i class="fa fa-angle-left pull-right"></i>
-            </span>
-          </a>
-          <ul class="treeview-menu">
-            <li><a href="pages/UI/general.html"><i class="fa fa-circle-o"></i> <?php echo lang('view'); ?></a></li>           
-          </ul>
-        </li>
+          </li>         
+      
         <li class="treeview">
           <a href="#">        
             <i class="fa fa-database"></i>
-            <span id="statistics"><!-- <?php //echo lang('statistics'); ?> --></span>
+            <span id="statistics"><?php echo lang('statistics'); ?> </span>
             <span class="pull-right-container">
               <i class="fa fa-angle-left pull-right"></i>
             </span>
@@ -109,7 +70,7 @@
         <li class="treeview">
           <a href="#">           
             <i class="fa fa-file"></i>
-            <span id="reports"><!-- <?php //echo lang('reports'); ?> --></span>
+            <span id="reports"> <?php echo lang('reports'); ?> </span>
             <span class="pull-right-container">
               <i class="fa fa-angle-left pull-right"></i>
             </span>
@@ -119,24 +80,11 @@
           </ul>
         </li>
 
+       
         <li class="treeview">
-          <a href="#">           
-            <i class="fa fa-map"></i>
-            <span id="maps"><!-- <?php //echo lang('maps'); ?> --></span>
-            <span class="pull-right-container">
-              <i class="fa fa-angle-left pull-right"></i>             
-            </span>
-          </a>
-          <ul class="treeview-menu">
-            <li><a href="pages/UI/general.html"><i class="fa fa-circle-o"></i> <?php echo lang('view'); ?></a></li>            
-          </ul>
-        </li>
-
-        <li class="treeview">
-          <a href="#">           
-           <!--  <i class="fa fa-map"></i> -->
+          <a href="#">          
            <i class="fa fa-comment"></i>
-           <span id="comments"><!-- <?php //echo lang('comments'); ?> --></span>
+           <span id="comments"> <?php echo lang('comments'); ?> </span>
            <span class="pull-right-container">
             <i class="fa fa-angle-left pull-right"></i>             
           </span>

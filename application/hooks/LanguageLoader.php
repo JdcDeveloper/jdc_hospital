@@ -1,22 +1,18 @@
 <?php
 class LanguageLoader
 {
-	private $ci;
-	private $siteLang;
-
-
-	public function initialize() {
-		$this->ci =& get_instance();
-		$this->ci->load->helper('language');
-		$this->siteLang = $this->$ci->session->userdata('site_lang');
+	function initialize() {
+		$ci =& get_instance();
+		$ci->load->helper('language');
+		$siteLang = $ci->session->userdata('site_lang');
 
 		// opciones del lenguaje
-		if ($this->siteLang == 'english') {
-			$this->ci->lang->load('english',$this->siteLang);
-		}elseif ($this->siteLang == 'spanish') {
-			$this->ci->lang->load('spanish',$this->siteLang);			
+		if ($siteLang == 'english') {
+			$ci->lang->load('english',$siteLang);
+		}elseif ($siteLang == 'spanish') {
+			$ci->lang->load('spanish',$siteLang);			
 		}else {
-			$this->ci->lang->load('english','english');
+			$ci->lang->load('english','english');
 		}
 
 	}

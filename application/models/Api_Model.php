@@ -45,30 +45,19 @@ class Api_Model extends CI_Model {
 		// 3 es student
 
 		$this->db->select("COUNT(id_role) AS totalAdmins");
-		$this->db->from("dev.users");
+		$this->db->from("users");
 		$this->db->where("id_role", 1);			
 		$admins = $this->db->get()->row();
 		
 		$this->db->select("COUNT(id_role) AS totalUsers");
-		$this->db->from("dev.users");		
+		$this->db->from("users");		
 		$users = $this->db->get()->row();
-
-		$this->db->select("COUNT(id_role) AS totalTeachers");
-		$this->db->from("dev.users");
-		$this->db->where("id_role", 2);		
-		$teachers = $this->db->get()->row();
-
-		$this->db->select("COUNT(id_role) AS totalStudents");
-		$this->db->from("dev.users");
-		$this->db->where("id_role", 3);		
-		$students = $this->db->get()->row();
+	
 
 		// paso de una vez las 3 consultas en un array clave,valor
 		$query = array(
 			'totalAdmins' => $admins,
-			'totalUsers' => $users,
-			'totalTeachers' => $teachers,
-			'totalStudents' => $students
+			'totalUsers' => $users			
 		);
 
 		return $query;		
@@ -77,7 +66,7 @@ class Api_Model extends CI_Model {
 	public function imgProfile($email){
 
 		$this->db->select( 'img' );
-		$this->db->from( 'dev.users' );
+		$this->db->from( 'users' );
 		$this->db->where("email", $email);		
 		$query = $this->db->get()->row();
 
